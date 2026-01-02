@@ -1,13 +1,27 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import FloatingHearts from "@/components/FloatingHearts";
+import WindLines from "@/components/WindLines";
+import HeroSection from "@/components/HeroSection";
+import ExplanationSection from "@/components/ExplanationSection";
+import ApologySection from "@/components/ApologySection";
+import ForgiveButton from "@/components/ForgiveButton";
+import PromiseSection from "@/components/PromiseSection";
+import FinalNote from "@/components/FinalNote";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main className="relative overflow-hidden">
+      {/* Background effects */}
+      <FloatingHearts />
+      <WindLines />
+
+      {/* Page sections */}
+      <HeroSection />
+      <ExplanationSection />
+      <ApologySection />
+      <ForgiveButton />
+      <PromiseSection />
+      <FinalNote />
+    </main>
   );
 };
 
